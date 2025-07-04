@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Study App - Flashcards & QCM</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="lang-toggle">
+    <label>
+      <input type="checkbox" id="languageToggle" /> Deutsch / English
+    </label>
+  </div>
+
+  <div class="mode-buttons">
+    <button onclick="setMode('flashcard')">Flashcards</button>
+    <button onclick="setMode('quiz')">QCM</button>
+  </div>
+
+  <div id="app"></div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
