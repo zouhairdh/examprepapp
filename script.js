@@ -58,7 +58,18 @@ const flashcards = [
     question: "Explain the difference between the placement strategy (placement policy) and the replacement strategy (replacement policy)",
     answer: "The placement strategy determines from where the required memory is taken (e.g., to minimize fragmentation).\n• First/Last Fit\n• Best Fit\n• Worst Fit\n• Buddy system\n\nThe replacement strategy determines which memory contents should be evicted if no free memory is available.\n• LRU – Least recently used\n• FIFO – First in First out\n• Second Chance"
   }
-}
+},
+  {
+  de: {
+    question: "Nennen und erläutern Sie drei Ereignisse, die das Rückschreiben des Block-Buffer-Caches auslösen.",
+    answer: "• Wenn kein freier Puffer mehr vorhanden ist\n• Bei Aufruf des Systemaufrufes sync()\n• Regelmäßig vom System\n• Nach jedem Schreibaufruf im Modus O_SYNC"
+  },
+  en: {
+    question: "Name and explain three events that trigger the write-back of the block buffer cache.",
+    answer: "• When no free buffer is available\n• When the system call sync() is invoked\n• Periodically by the system\n• After every write call in O_SYNC mode"
+  }
+},
+
 
 
 
