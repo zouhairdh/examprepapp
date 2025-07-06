@@ -48,7 +48,18 @@ const flashcards = [
     question: "Name the device classes of I/O devices mentioned in the lecture and briefly explain the difference between them.",
     answer: "Character-oriented devices (0.5 points): Typically sequential access, not random. (1 point)\nBlock-oriented devices (0.5 points): Random (direct) access is possible. (1 point)"
   }
+},
+  {
+  de: {
+    question: "Erläutern Sie den Unterschied zwischen der Platzierungsstrategie (placement policy) und der Ersetzungsstrategie (replacement policy)",
+    answer: "Die Platzierungsstrategie bestimmt, woher benötigter Speicher genommen wird (z. B. zur Minimierung des Verschnitts).\n• First/Last Fit\n• Best Fit\n• Worst Fit\n• Buddy-Verfahren\n\nDie Ersetzungsstrategie bestimmt, welche Speicherinhalte verdrängt werden sollen, falls kein freier Speicher mehr zur Verfügung steht.\n• LRU – Least recently used\n• FIFO – First in First out\n• Second Chance"
+  },
+  en: {
+    question: "Explain the difference between the placement strategy (placement policy) and the replacement strategy (replacement policy)",
+    answer: "The placement strategy determines from where the required memory is taken (e.g., to minimize fragmentation).\n• First/Last Fit\n• Best Fit\n• Worst Fit\n• Buddy system\n\nThe replacement strategy determines which memory contents should be evicted if no free memory is available.\n• LRU – Least recently used\n• FIFO – First in First out\n• Second Chance"
+  }
 }
+
 
 
 ];
