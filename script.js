@@ -28,7 +28,18 @@ const flashcards = [
       question: 'Name two conditions required for a deadlock.',
       answer: 'Mutual exclusion, hold and wait, no preemption.'
     }
+  },
+  {
+    de: {
+      question: 'Geben Sie die Auswirkungen der beiden Befehle „ls > wc“ sowie „ls | wc“ an und erläutern Sie anhand dessen den Unterschied zwischen den Shell-Operatoren „>“ und „|“:',
+      answer: '– ls > wc schreibt Ausgabe von ls -l in die Datei „wc“ (1P)\n– ls -l | wc leitet Ausgabe von ls an den Befehl „wc“ weiter (1P).\n– Unterschied: > leitet in eine Datei um, | leitet an einen Befehl weiter (1P)'
+    },
+    en: {
+      question: 'What are the effects of the two commands "ls > wc" and "ls | wc"? Explain the difference between the shell operators ">" and "|":',
+      answer: '– ls > wc writes the output of ls -l into the file "wc" (1P)\n– ls -l | wc pipes the output of ls to the "wc" command (1P).\n– Difference: > redirects output to a file, | pipes output to another command (1P)'
+    }
   }
+
 ];
 
 const quizzes = [
@@ -231,79 +242,79 @@ const quizzes = [
     }
   },
   {
-    "de": {
-      "question": "Welche der folgenden Aussagen sind wahr?",
-      "options": [
+    de: {
+      question: "Welche der folgenden Aussagen sind wahr?",
+      options: [
         "Ein Semaphor kann sowohl für gegenseitigen Ausschluss als auch zur Synchronisation verwendet werden, während ein Schloss (Mutex) nur für gegenseitigen Ausschluss verwendet werden kann.",
         "Ein Schloss (Mutex) kann sowohl für gegenseitigen Ausschluss als auch zur Synchronisation verwendet werden, während ein Semaphor nur für gegenseitigen Ausschluss verwendet werden kann.",
         "Ein Mutex hat einen Zähler, der den aktuellen Status der Ressource angibt.",
         "Ein Mutex ist ein Sperrmechanismus, der sicherstellt, dass nur ein Thread gleichzeitig auf eine Ressource zugreifen kann."
       ],
-      "correct": [1, 4]
+      correct: [1, 4]
     },
-    "en": {
-      "question": "Which of the following statements are true?",
-      "options": [
+    en: {
+      question: "Which of the following statements are true?",
+      options: [
         "A semaphore can be used for both mutual exclusion and synchronization, while a lock (mutex) can only be used for mutual exclusion.",
         "A lock (mutex) can be used for both mutual exclusion and synchronization, while a semaphore can only be used for mutual exclusion.",
         "A mutex has a counter that indicates the current status of the resource.",
         "A mutex is a locking mechanism that ensures only one thread can access a resource at a time."
       ],
-      "correct": [1, 4]
+      correct: [1, 4]
     }
   },
   {
-    "de": {
-      "question": "Bei der Verklemmungsvermeidung ...",
-      "options": [
+    de: {
+      question: "Bei der Verklemmungsvermeidung ...",
+      options: [
         "... wird sichergestellt, dass keine zwei Prozesse dieselbe Ressource gleichzeitig anfordern können.",
         "... wird versucht, das System durch dynamische Analyse der Ressourcenzuweisung in einen sicheren Zustand zu halten.",
         "... prüft das System vor jeder Ressourcenzuweisung, ob die verbleibenden Ressourcen für die restlichen Prozesse ausreichen.",
         "... werden Ressourcen statisch zugewiesen, um sicherzustellen, dass keine Verklemmung auftritt.",
         "... wird jede Ressourcenzuweisung sofort zurückgenommen, wenn ein Prozess zu lange wartet."
       ],
-      "correct": [2, 3]
+      correct: [2, 3]
     },
-    "en": {
-      "question": "In deadlock avoidance ...",
-      "options": [
+    en: {
+      question: "In deadlock avoidance ...",
+      options: [
         "... it is ensured that no two processes can request the same resource at the same time.",
         "... the system tries to keep the resource allocation in a safe state using dynamic analysis.",
         "... the system checks before every allocation whether the remaining resources are sufficient for the other processes.",
         "... resources are statically assigned to ensure that no deadlock occurs.",
         "... every allocation is revoked immediately if a process waits too long."
       ],
-      "correct": [2, 3]
+      correct: [2, 3]
     }
   },
   {
-    "de": {
-      "question": "Ein Livelock ...",
-      "options": [
+    de: {
+      question: "Ein Livelock ...",
+      options: [
         "... ist eine spezielle Form des Deadlocks, bei dem die Ressourcen freigegeben werden, aber die Prozesse trotzdem blockiert bleiben.",
         "... kann bei wechselseitigem aktiven Warten (busy waiting oder „lazy“ busy waiting) entstehen.",
         "... tritt nur in verteilten Systemen auf.",
         "... ist gegenüber dem Deadlock das geringere Übel.",
         "... kann durch das einfache Hinzufügen von mehr Ressourcen gelöst werden."
       ],
-      "correct": [2]
+      correct: [2]
     },
-    "en": {
-      "question": "A livelock ...",
-      "options": [
+    en: {
+      question: "A livelock ...",
+      options: [
         "... is a special form of deadlock where resources are released but processes remain blocked.",
         "... can arise from mutual active waiting (busy waiting or lazy busy waiting).",
         "... only occurs in distributed systems.",
         "... is the lesser evil compared to deadlock.",
         "... can be solved by simply adding more resources."
       ],
-      "correct": [2]
+      correct: [2]
     }
   },
   {
-    "de": {
-      "question": "Welche Aussagen über UNIX-Signale sind wahr?",
-      "options": [
+    de: {
+      question: "Welche Aussagen über UNIX-Signale sind wahr?",
+      options: [
         "Alle UNIX-Signale können von einem Prozess blockiert werden, um unerwünschte Unterbrechungen zu vermeiden.",
         "UNIX-Signale werden immer von der Benutzeroberfläche eines Betriebssystems gesendet.",
         "Der Befehl kill kann verwendet werden, um ein Signal an einen Prozess zu senden, um diesen Prozess zu beenden.",
@@ -311,11 +322,11 @@ const quizzes = [
         "Jeder Prozess in einem UNIX-System kann nur ein Signal empfangen und darauf reagieren.",
         "Ein Prozess kann Signale ignorieren oder einen benutzerdefinierten Signalhandler verwenden, um auf ein Signal zu reagieren."
       ],
-      "correct": [2, 3, 6]
+      correct: [2, 3, 6]
     },
-    "en": {
-      "question": "Which statements about UNIX signals are true?",
-      "options": [
+    en: {
+      question: "Which statements about UNIX signals are true?",
+      options: [
         "All UNIX signals can be blocked by a process to avoid unwanted interruptions.",
         "UNIX signals are always sent from the graphical user interface of an operating system.",
         "The kill command can be used to send a signal to a process to terminate it.",
@@ -323,80 +334,80 @@ const quizzes = [
         "Each process in a UNIX system can only receive and respond to one signal.",
         "A process can ignore signals or use a custom signal handler to respond to a signal."
       ],
-      "correct": [2, 3, 6]
+      correct: [2, 3, 6]
     }
   }, {
-    "de": {
-      "question": "Was besagt das Hollywood-Prinzip?",
-      "options": [
+    de: {
+      question: "Was besagt das Hollywood-Prinzip?",
+      options: [
         "Das Hollywood-Prinzip besagt, dass niedrigstufige Komponenten oder Module die Kontrolle darüber haben, wann und wie sie von höherstufigen Komponenten verwendet werden.",
         "Das Hollywood-Prinzip besagt, dass Entwickler aus Hollywood in der Softwareindustrie bevorzugt werden.",
         "Das Hollywood-Prinzip besagt, dass direkte Aufrufe vermieden werden sollen zugunsten einer umgekehrten Kontrollflussrichtung."
       ],
-      "correct": [1]
+      correct: [1]
     },
-    "en": {
-      "question": "What does the Hollywood Principle state?",
-      "options": [
+    en: {
+      question: "What does the Hollywood Principle state?",
+      options: [
         "The Hollywood Principle states that low-level components or modules control when and how they are used by higher-level components.",
         "The Hollywood Principle states that developers from Hollywood are preferred in the software industry.",
         "The Hollywood Principle states that direct calls should be avoided in favor of inverted control flow."
       ],
-      "correct": [1]
+      correct: [1]
     }
   },
   {
-    "de": {
-      "question": "Welche Aussagen zur Verwendung von Sockets in Netzwerkanwendungen sind korrekt?",
-      "options": [
+    de: {
+      question: "Welche Aussagen zur Verwendung von Sockets in Netzwerkanwendungen sind korrekt?",
+      options: [
         "Sockets sind für die Übertragung von Signalen zwischen Prozessen verantwortlich.",
         "Sockets garantieren immer eine zuverlässige und fehlerfreie Übertragung von Daten über das Netzwerk.",
         "Ein Socket kann direkt mit einer IP-Adresse kommunizieren, ohne dass ein Port erforderlich ist.",
         "Sockets ermöglichen die bidirektionale Kommunikation zwischen Prozessen über ein Netzwerk.",
         "Ein Socket kann sowohl für TCP als auch für UDP verwendet werden, je nach den Anforderungen der Anwendung."
       ],
-      "correct": [4, 5]
+      correct: [4, 5]
     },
-    "en": {
-      "question": "Which statements about the use of sockets in network applications are correct?",
-      "options": [
+    en: {
+      question: "Which statements about the use of sockets in network applications are correct?",
+      options: [
         "Sockets are responsible for transmitting signals between processes.",
         "Sockets always guarantee reliable and error-free data transmission over the network.",
         "A socket can communicate directly with an IP address without requiring a port.",
         "Sockets enable bidirectional communication between processes over a network.",
         "A socket can be used for both TCP and UDP depending on the application requirements."
       ],
-      "correct": [4, 5]
+      correct: [4, 5]
     }
   },
   {
-    "de": {
-      "question": "Beim Paging...",
-      "options": [
+    de: {
+      question: "Beim Paging...",
+      options: [
         "... wird eine sogenannte Seitentabelle verwendet, die Seiten (Virtueller Adressraum) auf Kacheln (Physikalischer Adressraum) abbildet.",
         "... wird der virtuelle Adressraum eines Prozesses in Seiten gleicher Größe unterteilt, die unabhängig voneinander im physischen Speicher platziert werden können.",
         "... wird der gesamte Prozessspeicher am Stück in den physischen Speicher geladen.",
         "... muss die Seitentabelle bijektiv sein.",
         "... gibt es keine Möglichkeit, Seiten zwischen Hauptspeicher und Sekundärspeicher auszutauschen."
       ],
-      "correct": [1, 2]
+      correct: [1, 2]
     },
-    "en": {
-      "question": "In paging...",
-      "options": [
+    en: {
+      question: "In paging...",
+      options: [
         "... a page table is used to map pages (virtual address space) to frames (physical address space).",
         "... the virtual address space of a process is divided into pages of equal size that can be placed independently in physical memory.",
         "... the entire process memory is loaded into physical memory at once.",
         "... the page table must be bijective.",
         "... it is not possible to swap pages between main and secondary memory."
       ],
-      "correct": [1, 2]
+      correct: [1, 2]
     }
   },
   {
-    "de": {
-      "question": "Bei einem Kontextwechsel...",
-      "options": [
+    de: {
+      question: "Bei einem Kontextwechsel...",
+      options: [
         "... werden die Hardware-Komponenten wie CPU und Speicher komplett neu initialisiert.",
         "... wird nur zwischen Benutzerprozessen durchgeführt, nicht zwischen Kernelprozessen.",
         "... wird der Zustand des aktuell laufenden Prozesses gespeichert und der Zustand des nächsten zu laufenden Prozesses geladen.",
@@ -406,11 +417,11 @@ const quizzes = [
         "... muss der Inhalt der Translation Lookaside Buffer (TLB) invalidiert werden, da sich die virtuelle zu physikalische Adressübersetzung ändert.",
         "... werden alle Daten im Cache automatisch beibehalten, um die Leistung zu verbessern."
       ],
-      "correct": [3, 5, 7]
+      correct: [3, 5, 7]
     },
-    "en": {
-      "question": "During a context switch...",
-      "options": [
+    en: {
+      question: "During a context switch...",
+      options: [
         "... hardware components such as CPU and memory are completely reinitialized.",
         "... it is only performed between user processes, not kernel processes.",
         "... the state of the currently running process is saved and the state of the next process is loaded.",
@@ -420,29 +431,29 @@ const quizzes = [
         "... the contents of the Translation Lookaside Buffer (TLB) must be invalidated because the virtual-to-physical address mapping changes.",
         "... all cache data is automatically preserved to improve performance."
       ],
-      "correct": [3, 5, 7]
+      correct: [3, 5, 7]
     }
   },
   {
-    "de": {
-      "question": "Software kann die IRQ-Behandlung unter x86 Systemen mithilfe der Befehle sti und cli unterdrücken. Warum könnte dies problematisch sein?",
-      "options": [
+    de: {
+      question: "Software kann die IRQ-Behandlung unter x86 Systemen mithilfe der Befehle sti und cli unterdrücken. Warum könnte dies problematisch sein?",
+      options: [
         "Das Unterdrücken der IRQ-Behandlung verbessert immer die Leistung des Systems, da weniger Interrupts die CPU belasten.",
         "Das Unterdrücken der IRQ-Behandlung kann dazu führen, dass wichtige Hardware-Interrupts, wie z.B. Timer-Interrupts, nicht rechtzeitig verarbeitet werden, was die Systemstabilität beeinträchtigen kann.",
         "Die Verwendung von sti und cli hat keine Auswirkungen auf die Multithreading-Fähigkeiten des Systems, da Interrupts unabhängig von der CPU-Operation sind.",
         "Wenn IRQs zu lange unterdrückt werden, kann es zu einem Verlust von Daten kommen, insbesondere bei Geräten, die auf regelmäßige Interrupts angewiesen sind, wie z.B. Netzwerkkarten oder Festplatten."
       ],
-      "correct": [2, 4]
+      correct: [2, 4]
     },
-    "en": {
-      "question": "Software can suppress IRQ handling on x86 systems using the sti and cli instructions. Why could this be problematic?",
-      "options": [
+    en: {
+      question: "Software can suppress IRQ handling on x86 systems using the sti and cli instructions. Why could this be problematic?",
+      options: [
         "Suppressing IRQ handling always improves system performance because fewer interrupts burden the CPU.",
         "Suppressing IRQ handling can cause important hardware interrupts, such as timer interrupts, to not be processed in time, which can affect system stability.",
         "Using sti and cli has no effect on the multithreading capabilities of the system since interrupts are independent of CPU operation.",
         "If IRQs are suppressed for too long, data loss may occur, especially with devices that rely on regular interrupts such as network cards or hard drives."
       ],
-      "correct": [2, 4]
+      correct: [2, 4]
     }
   }
 
