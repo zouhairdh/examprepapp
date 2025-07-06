@@ -38,7 +38,18 @@ const flashcards = [
       question: 'What are the effects of the two commands "ls > wc" and "ls | wc"? Explain the difference between the shell operators ">" and "|":',
       answer: '– ls > wc writes the output of ls -l into the file "wc" (1P)\n– ls -l | wc pipes the output of ls to the "wc" command (1P).\n– Difference: > redirects output to a file, | pipes output to another command (1P)'
     }
+  },
+  {
+  de: {
+    question: "Nennen Sie die aus der Vorlesung bekannten Gerätekategorien von E/A-Geräten und erläutern Sie kurz den Unterschied zwischen denen.",
+    answer: "Zeichenorientierte Geräte (0,5 Punkte): In der Regel sequentieller Zugriff, nicht wahlfrei. (1 Punkt)\nBlockorientierte Geräte (0,5 Punkte): Wahlfreier (random-access) Zugriff. (1 Punkt)"
+  },
+  en: {
+    question: "Name the device classes of I/O devices mentioned in the lecture and briefly explain the difference between them.",
+    answer: "Character-oriented devices (0.5 points): Typically sequential access, not random. (1 point)\nBlock-oriented devices (0.5 points): Random (direct) access is possible. (1 point)"
   }
+}
+
 
 ];
 
