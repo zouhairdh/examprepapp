@@ -69,6 +69,17 @@ const flashcards = [
     answer: "• When no free buffer is available\n• When the system call sync() is invoked\n• Periodically by the system\n• After every write call in O_SYNC mode"
   }
 },
+  {
+  de: {
+    question: "Nennen Sie die aus der Vorlesung bekannten Gerätekategorien von E/A-Geräten und erläutern Sie kurz den Unterschied zwischen denen.",
+    answer: "• Zeichenorientierte Geräte (0.5 Punkte):\n  In der Regel sequentieller Zugriff, nicht wahlfrei. (1 Punkt)\n• Blockorientierte Geräte (0.5 Punkte):\n  Wahlfreier (random-access) Zugriff. (1 Punkt)"
+  },
+  en: {
+    question: "Name the device classes of I/O devices known from the lecture and briefly explain the difference between them.",
+    answer: "• Character-oriented devices (0.5 points):\n  Usually sequential access, not random-access. (1 point)\n• Block-oriented devices (0.5 points):\n  Random-access possible. (1 point)"
+  }
+}
+
 
 
 
