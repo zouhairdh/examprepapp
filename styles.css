@@ -96,3 +96,24 @@ button:disabled {
   font-style: italic;
   color: #666;
 }
+
+.feedback ul {
+  padding-left: 20px;
+  margin-top: 5px;
+}
+
+.feedback li {
+  margin-bottom: 5px;
+}
+
+.correct-answer {
+  background-color: #d4edda;
+  border-left: 4px solid #28a745;
+  padding-left: 4px;
+}
+
+.incorrect-answer {
+  background-color: #f8d7da;
+  border-left: 4px solid #dc3545;
+  padding-left: 4px;
+}
