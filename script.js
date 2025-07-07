@@ -40,45 +40,45 @@ const flashcards = [
     }
   },
   {
-  de: {
-    question: "Nennen Sie die aus der Vorlesung bekannten Gerätekategorien von E/A-Geräten und erläutern Sie kurz den Unterschied zwischen denen.",
-    answer: "Zeichenorientierte Geräte (0,5 Punkte): In der Regel sequentieller Zugriff, nicht wahlfrei. (1 Punkt)\nBlockorientierte Geräte (0,5 Punkte): Wahlfreier (random-access) Zugriff. (1 Punkt)"
+    de: {
+      question: "Nennen Sie die aus der Vorlesung bekannten Gerätekategorien von E/A-Geräten und erläutern Sie kurz den Unterschied zwischen denen.",
+      answer: "Zeichenorientierte Geräte (0,5 Punkte): In der Regel sequentieller Zugriff, nicht wahlfrei. (1 Punkt)\nBlockorientierte Geräte (0,5 Punkte): Wahlfreier (random-access) Zugriff. (1 Punkt)"
+    },
+    en: {
+      question: "Name the device classes of I/O devices mentioned in the lecture and briefly explain the difference between them.",
+      answer: "Character-oriented devices (0.5 points): Typically sequential access, not random. (1 point)\nBlock-oriented devices (0.5 points): Random (direct) access is possible. (1 point)"
+    }
   },
-  en: {
-    question: "Name the device classes of I/O devices mentioned in the lecture and briefly explain the difference between them.",
-    answer: "Character-oriented devices (0.5 points): Typically sequential access, not random. (1 point)\nBlock-oriented devices (0.5 points): Random (direct) access is possible. (1 point)"
-  }
-},
   {
-  de: {
-    question: "Erläutern Sie den Unterschied zwischen der Platzierungsstrategie (placement policy) und der Ersetzungsstrategie (replacement policy)",
-    answer: "Die Platzierungsstrategie bestimmt, woher benötigter Speicher genommen wird (z. B. zur Minimierung des Verschnitts).\n• First/Last Fit\n• Best Fit\n• Worst Fit\n• Buddy-Verfahren\n\nDie Ersetzungsstrategie bestimmt, welche Speicherinhalte verdrängt werden sollen, falls kein freier Speicher mehr zur Verfügung steht.\n• LRU – Least recently used\n• FIFO – First in First out\n• Second Chance"
+    de: {
+      question: "Erläutern Sie den Unterschied zwischen der Platzierungsstrategie (placement policy) und der Ersetzungsstrategie (replacement policy)",
+      answer: "Die Platzierungsstrategie bestimmt, woher benötigter Speicher genommen wird (z. B. zur Minimierung des Verschnitts).\n• First/Last Fit\n• Best Fit\n• Worst Fit\n• Buddy-Verfahren\n\nDie Ersetzungsstrategie bestimmt, welche Speicherinhalte verdrängt werden sollen, falls kein freier Speicher mehr zur Verfügung steht.\n• LRU – Least recently used\n• FIFO – First in First out\n• Second Chance"
+    },
+    en: {
+      question: "Explain the difference between the placement strategy (placement policy) and the replacement strategy (replacement policy)",
+      answer: "The placement strategy determines from where the required memory is taken (e.g., to minimize fragmentation).\n• First/Last Fit\n• Best Fit\n• Worst Fit\n• Buddy system\n\nThe replacement strategy determines which memory contents should be evicted if no free memory is available.\n• LRU – Least recently used\n• FIFO – First in First out\n• Second Chance"
+    }
   },
-  en: {
-    question: "Explain the difference between the placement strategy (placement policy) and the replacement strategy (replacement policy)",
-    answer: "The placement strategy determines from where the required memory is taken (e.g., to minimize fragmentation).\n• First/Last Fit\n• Best Fit\n• Worst Fit\n• Buddy system\n\nThe replacement strategy determines which memory contents should be evicted if no free memory is available.\n• LRU – Least recently used\n• FIFO – First in First out\n• Second Chance"
-  }
-},
   {
-  de: {
-    question: "Nennen und erläutern Sie drei Ereignisse, die das Rückschreiben des Block-Buffer-Caches auslösen.",
-    answer: "• Wenn kein freier Puffer mehr vorhanden ist\n• Bei Aufruf des Systemaufrufes sync()\n• Regelmäßig vom System\n• Nach jedem Schreibaufruf im Modus O_SYNC"
+    de: {
+      question: "Nennen und erläutern Sie drei Ereignisse, die das Rückschreiben des Block-Buffer-Caches auslösen.",
+      answer: "• Wenn kein freier Puffer mehr vorhanden ist\n• Bei Aufruf des Systemaufrufes sync()\n• Regelmäßig vom System\n• Nach jedem Schreibaufruf im Modus O_SYNC"
+    },
+    en: {
+      question: "Name and explain three events that trigger the write-back of the block buffer cache.",
+      answer: "• When no free buffer is available\n• When the system call sync() is invoked\n• Periodically by the system\n• After every write call in O_SYNC mode"
+    }
   },
-  en: {
-    question: "Name and explain three events that trigger the write-back of the block buffer cache.",
-    answer: "• When no free buffer is available\n• When the system call sync() is invoked\n• Periodically by the system\n• After every write call in O_SYNC mode"
-  }
-},
   {
-  de: {
-    question: "Nennen Sie die aus der Vorlesung bekannten Gerätekategorien von E/A-Geräten und erläutern Sie kurz den Unterschied zwischen denen.",
-    answer: "• Zeichenorientierte Geräte (0.5 Punkte):\n  In der Regel sequentieller Zugriff, nicht wahlfrei. (1 Punkt)\n• Blockorientierte Geräte (0.5 Punkte):\n  Wahlfreier (random-access) Zugriff. (1 Punkt)"
-  },
-  en: {
-    question: "Name the device classes of I/O devices known from the lecture and briefly explain the difference between them.",
-    answer: "• Character-oriented devices (0.5 points):\n  Usually sequential access, not random-access. (1 point)\n• Block-oriented devices (0.5 points):\n  Random-access possible. (1 point)"
+    de: {
+      question: "Nennen Sie die aus der Vorlesung bekannten Gerätekategorien von E/A-Geräten und erläutern Sie kurz den Unterschied zwischen denen.",
+      answer: "• Zeichenorientierte Geräte (0.5 Punkte):\n  In der Regel sequentieller Zugriff, nicht wahlfrei. (1 Punkt)\n• Blockorientierte Geräte (0.5 Punkte):\n  Wahlfreier (random-access) Zugriff. (1 Punkt)"
+    },
+    en: {
+      question: "Name the device classes of I/O devices known from the lecture and briefly explain the difference between them.",
+      answer: "• Character-oriented devices (0.5 points):\n  Usually sequential access, not random-access. (1 point)\n• Block-oriented devices (0.5 points):\n  Random-access possible. (1 point)"
+    }
   }
-}
 
 
 
@@ -618,10 +618,46 @@ function renderApp() {
       const checked = Array.from(form.querySelectorAll('input:checked')).map(i => +i.value);
       const isCorrect = checked.length === shuffledCorrect.length &&
         JSON.stringify(checked.sort()) === JSON.stringify(shuffledCorrect.sort());
-      feedback.textContent = isCorrect ?
+
+      feedback.innerHTML = isCorrect ?
         (currentLang === 'de' ? 'Richtig!' : 'Correct!') :
-        (currentLang === 'de' ? 'Versuchen Sie es erneut.' : 'Try again.');
+        (currentLang === 'de' ? 'Falsch! Die richtigen Antworten sind:' : 'Incorrect! The correct answers are:');
+
       feedback.className = 'feedback ' + (isCorrect ? 'correct' : 'incorrect');
+
+      // Clear previous highlighting
+      const allLabels = form.querySelectorAll('label');
+      allLabels.forEach(label => {
+        label.classList.remove('correct-answer', 'incorrect-answer');
+      });
+
+      if (!isCorrect) {
+        // Highlight correct answers in green
+        shuffledCorrect.forEach(correctIndex => {
+          allLabels[correctIndex].classList.add('correct-answer');
+        });
+
+        // Highlight incorrectly selected answers in red
+        checked.forEach(selectedIndex => {
+          if (!shuffledCorrect.includes(selectedIndex)) {
+            allLabels[selectedIndex].classList.add('incorrect-answer');
+          }
+        });
+
+        // Create a list of correct answers
+        const correctAnswersList = document.createElement('ul');
+        correctAnswersList.style.marginTop = '10px';
+        correctAnswersList.style.textAlign = 'left';
+
+        shuffledCorrect.forEach(correctIndex => {
+          const item = document.createElement('li');
+          item.textContent = shuffledOptions[correctIndex];
+          correctAnswersList.appendChild(item);
+        });
+
+        feedback.appendChild(correctAnswersList);
+      }
+
       feedback.style.display = 'block';
       answerChecked = true;
       nextBtn.disabled = false;
