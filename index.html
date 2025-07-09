@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Study App - Flashcards & QCM</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
   <div class="lang-toggle">
     <label>
@@ -20,9 +18,24 @@
     <button onclick="setMode('quiz')">QCM</button>
   </div>
 
+  <div id="user-section" class="user-section">
+    <div id="user-auth">
+      <h2>Track Your Progress</h2>
+      <div>
+        <input type="text" id="username" placeholder="Enter your username">
+        <button id="start-btn">Start</button>
+      </div>
+    </div>
+    <div id="user-stats" style="display:none;">
+      <h3>Your Progress</h3>
+      <p>Recent scores: <span id="recent-scores"></span></p>
+      <p>Average score: <span id="average-score"></span></p>
+      <button id="change-user">Change User</button>
+    </div>
+  </div>
+
   <div id="app"></div>
 
   <script src="script.js"></script>
 </body>
-
 </html>
