@@ -69,17 +69,6 @@ const flashcards = [
       answer: "• When no free buffer is available\n• When the system call sync() is invoked\n• Periodically by the system\n• After every write call in O_SYNC mode"
     }
   },
-  {
-    de: {
-      question: "Nennen Sie die aus der Vorlesung bekannten Gerätekategorien von E/A-Geräten und erläutern Sie kurz den Unterschied zwischen denen.",
-      answer: "• Zeichenorientierte Geräte (0.5 Punkte):\n  In der Regel sequentieller Zugriff, nicht wahlfrei. (1 Punkt)\n• Blockorientierte Geräte (0.5 Punkte):\n  Wahlfreier (random-access) Zugriff. (1 Punkt)"
-    },
-    en: {
-      question: "Name the device classes of I/O devices known from the lecture and briefly explain the difference between them.",
-      answer: "• Character-oriented devices (0.5 points):\n  Usually sequential access, not random-access. (1 point)\n• Block-oriented devices (0.5 points):\n  Random-access possible. (1 point)"
-    }
-  }
-
 
 
 
@@ -499,7 +488,105 @@ const quizzes = [
       ],
       correct: [2, 4]
     }
+  },
+  {
+  "de": {
+    "question": "Was ist kein gültiger UNIX-Prozesszustand?",
+    "options": [
+      "Bereit (Ready)",
+      "Laufend (Running)",
+      "Gestoppt (Stopped)",
+      "Zombie (Defunct)"
+    ],
+    "correct": [1]
+  },
+  "en": {
+    "question": "Which one is not a valid UNIX process state?",
+    "options": [
+      "Ready",
+      "Running",
+      "Stopped",
+      "Zombie"
+    ],
+    "correct": [1]
   }
+},
+
+  {
+  "de": {
+    "question": "Was passiert mit einem verwaisten Prozess in einem UNIX-basierten Betriebssystem?",
+    "options": [
+      "Er wird automatisch beendet.",
+      "Er wird vom init-Prozess übernommen.",
+      "Sein Elternprozess muss auf ihn warten.",
+      "Er wird beim nächsten Aufruf von fork() wiederverwendet."
+    ],
+    "correct": [2]
+  },
+  "en": {
+    "question": "What happens to an orphaned process in a UNIX-based operating system?",
+    "options": [
+      "It is automatically terminated.",
+      "It is adopted by the init process.",
+      "Its parent process must wait for it.",
+      "It is reused on the next call to fork()."
+    ],
+    "correct": [2]
+  }
+},
+{
+  "de": {
+    "question": "Was beschreibt der Begriff Swapping?",
+    "options": [
+      "Das Verschieben von Daten zwischen Haupt- und Hintergrundspeicher, um den verfügbaren Arbeitsspeicher zu erweitern.",
+      "Die geschickte Aufteilung des Hauptspeichers zwischen verschiedenen Prozessen, um die Speichernutzung zu optimieren.",
+      "Der Wechsel zwischen verschiedenen Prozessen, um die Systemleistung zu verbessern.",
+      "Die Möglichkeit externe Hardwaregeräte (z.B. Maus) im Betrieb an- oder abzustecken."
+    ],
+    "correct": [1]
+  },
+  "en": {
+    "question": "What does the term swapping describe?",
+    "options": [
+      "Moving data between main memory and secondary memory to expand the available RAM.",
+      "The clever division of main memory among various processes to optimize memory usage.",
+      "Switching between different processes to improve system performance.",
+      "The ability to plug in or remove external hardware (e.g., a mouse) during operation."
+    ],
+    "correct": [1]
+  }
+},
+
+  {
+  "de": {
+    "question": "Wozu dient der Index in einem indizierten Dateisystem?",
+    "options": [
+      "Der Index ermöglicht den Zugriff auf die Daten durch Nachschlagen der enthaltenen Verweise auf Speicherorte.",
+      "Der Index speichert die Daten in sequentiell Form als indiziertes Array.",
+      "Der Index verwendet eine hashbasierte Struktur, um den direkten Zugriff auf die Daten zu ermöglichen.",
+      "Der Index verwaltet lediglich die Metainformationen (z.B. Dateinamen, Größe, Änderungsdatum)."
+    ],
+    "correct": [1]
+  },
+  "en": {
+    "question": "What is the purpose of the index in an indexed file system?",
+    "options": [
+      "The index enables access to the data by looking up the stored references to storage locations.",
+      "The index stores the data in sequential form as an indexed array.",
+      "The index uses a hash-based structure to allow direct access to the data.",
+      "The index only manages metadata (e.g., filenames, size, modification date)."
+    ],
+    "correct": [1]
+  }
+},
+  
+
+
+  
+
+
+
+  
 
 
 
