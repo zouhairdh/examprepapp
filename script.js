@@ -233,7 +233,7 @@ const quizzes = [
         '... entsteht, wenn zwei oder mehr Prozesse oder Threads gleichzeitig auf gemeinsame Ressourcen zugreifen und ihre Ausführungsreihenfolge das Endergebnis beeinflusst.',
         '... führt immer zu einem Deadlock.',
       ],
-      correct: [1, 3]
+      correct: [0, 2]
     },
     en: {
       question: 'A race condition (RC) ...',
@@ -243,7 +243,7 @@ const quizzes = [
         '... occurs when two or more processes or threads access shared resources simultaneously and the execution order affects the final result.',
         '... always leads to a deadlock.',
       ],
-      correct: [1, 3]
+      correct: [0, 2]
     }
   },
   {
@@ -258,7 +258,7 @@ const quizzes = [
         'Der Algorithmus kann nicht garantieren, dass eine Wartenummer nur an einen Prozess vergeben wird.',
         'Die Acquire-Methode besitzt eine asymptotische Laufzeit von O(n)',
       ],
-      correct: [1, 4, 6, 7]
+      correct: [0, 3, 5, 6]
     },
     en: {
       question: 'Which statements about the Bakery algorithm are true?',
@@ -271,7 +271,7 @@ const quizzes = [
         'The algorithm cannot guarantee that a waiting number is only assigned to one process.',
         'The acquire method has an asymptotic runtime of O(n).',
       ],
-      correct: [1, 4, 6, 7]
+      correct: [0, 3, 5, 6]
     }
   },
   {
@@ -283,7 +283,7 @@ const quizzes = [
         "Ein Mutex hat einen Zähler, der den aktuellen Status der Ressource angibt.",
         "Ein Mutex ist ein Sperrmechanismus, der sicherstellt, dass nur ein Thread gleichzeitig auf eine Ressource zugreifen kann."
       ],
-      correct: [1, 4]
+      correct: [0, 3]
     },
     en: {
       question: "Which of the following statements are true?",
@@ -293,7 +293,7 @@ const quizzes = [
         "A mutex has a counter that indicates the current status of the resource.",
         "A mutex is a locking mechanism that ensures only one thread can access a resource at a time."
       ],
-      correct: [1, 4]
+      correct: [0, 3]
     }
   },
   {
@@ -306,7 +306,7 @@ const quizzes = [
         "... werden Ressourcen statisch zugewiesen, um sicherzustellen, dass keine Verklemmung auftritt.",
         "... wird jede Ressourcenzuweisung sofort zurückgenommen, wenn ein Prozess zu lange wartet."
       ],
-      correct: [2, 3]
+      correct: [1, 2]
     },
     en: {
       question: "In deadlock avoidance ...",
@@ -317,7 +317,7 @@ const quizzes = [
         "... resources are statically assigned to ensure that no deadlock occurs.",
         "... every allocation is revoked immediately if a process waits too long."
       ],
-      correct: [2, 3]
+      correct: [1, 2]
     }
   },
   {
@@ -330,7 +330,7 @@ const quizzes = [
         "... ist gegenüber dem Deadlock das geringere Übel.",
         "... kann durch das einfache Hinzufügen von mehr Ressourcen gelöst werden."
       ],
-      correct: [2]
+      correct: [1]
     },
     en: {
       question: "A livelock ...",
@@ -341,7 +341,7 @@ const quizzes = [
         "... is the lesser evil compared to deadlock.",
         "... can be solved by simply adding more resources."
       ],
-      correct: [2]
+      correct: [1]
     }
   },
   {
@@ -355,7 +355,7 @@ const quizzes = [
         "Jeder Prozess in einem UNIX-System kann nur ein Signal empfangen und darauf reagieren.",
         "Ein Prozess kann Signale ignorieren oder einen benutzerdefinierten Signalhandler verwenden, um auf ein Signal zu reagieren."
       ],
-      correct: [2, 3, 6]
+      correct: [1, 2, 5]
     },
     en: {
       question: "Which statements about UNIX signals are true?",
@@ -367,7 +367,7 @@ const quizzes = [
         "Each process in a UNIX system can only receive and respond to one signal.",
         "A process can ignore signals or use a custom signal handler to respond to a signal."
       ],
-      correct: [2, 3, 6]
+      correct: [1, 2, 5]
     }
   }, {
     de: {
@@ -377,7 +377,7 @@ const quizzes = [
         "Das Hollywood-Prinzip besagt, dass Entwickler aus Hollywood in der Softwareindustrie bevorzugt werden.",
         "Das Hollywood-Prinzip besagt, dass direkte Aufrufe vermieden werden sollen zugunsten einer umgekehrten Kontrollflussrichtung."
       ],
-      correct: [1]
+      correct: [0]
     },
     en: {
       question: "What does the Hollywood Principle state?",
@@ -386,7 +386,7 @@ const quizzes = [
         "The Hollywood Principle states that developers from Hollywood are preferred in the software industry.",
         "The Hollywood Principle states that direct calls should be avoided in favor of inverted control flow."
       ],
-      correct: [1]
+      correct: [0]
     }
   },
   {
@@ -399,7 +399,7 @@ const quizzes = [
         "Sockets ermöglichen die bidirektionale Kommunikation zwischen Prozessen über ein Netzwerk.",
         "Ein Socket kann sowohl für TCP als auch für UDP verwendet werden, je nach den Anforderungen der Anwendung."
       ],
-      correct: [4, 5]
+      correct: [3, 4]
     },
     en: {
       question: "Which statements about the use of sockets in network applications are correct?",
@@ -410,7 +410,7 @@ const quizzes = [
         "Sockets enable bidirectional communication between processes over a network.",
         "A socket can be used for both TCP and UDP depending on the application requirements."
       ],
-      correct: [4, 5]
+      correct: [3, 4]
     }
   },
   {
@@ -423,7 +423,7 @@ const quizzes = [
         "... muss die Seitentabelle bijektiv sein.",
         "... gibt es keine Möglichkeit, Seiten zwischen Hauptspeicher und Sekundärspeicher auszutauschen."
       ],
-      correct: [1, 2]
+      correct: [0, 1]
     },
     en: {
       question: "In paging...",
@@ -434,7 +434,7 @@ const quizzes = [
         "... the page table must be bijective.",
         "... it is not possible to swap pages between main and secondary memory."
       ],
-      correct: [1, 2]
+      correct: [0, 1]
     }
   },
   {
@@ -450,7 +450,7 @@ const quizzes = [
         "... muss der Inhalt der Translation Lookaside Buffer (TLB) invalidiert werden, da sich die virtuelle zu physikalische Adressübersetzung ändert.",
         "... werden alle Daten im Cache automatisch beibehalten, um die Leistung zu verbessern."
       ],
-      correct: [3, 5, 7]
+      correct: [2, 4, 6]
     },
     en: {
       question: "During a context switch...",
@@ -464,7 +464,7 @@ const quizzes = [
         "... the contents of the Translation Lookaside Buffer (TLB) must be invalidated because the virtual-to-physical address mapping changes.",
         "... all cache data is automatically preserved to improve performance."
       ],
-      correct: [3, 5, 7]
+      correct: [2, 4, 6]
     }
   },
   {
@@ -476,7 +476,7 @@ const quizzes = [
         "Die Verwendung von sti und cli hat keine Auswirkungen auf die Multithreading-Fähigkeiten des Systems, da Interrupts unabhängig von der CPU-Operation sind.",
         "Wenn IRQs zu lange unterdrückt werden, kann es zu einem Verlust von Daten kommen, insbesondere bei Geräten, die auf regelmäßige Interrupts angewiesen sind, wie z.B. Netzwerkkarten oder Festplatten."
       ],
-      correct: [2, 4]
+      correct: [1, 3]
     },
     en: {
       question: "Software can suppress IRQ handling on x86 systems using the sti and cli instructions. Why could this be problematic?",
@@ -486,7 +486,7 @@ const quizzes = [
         "Using sti and cli has no effect on the multithreading capabilities of the system since interrupts are independent of CPU operation.",
         "If IRQs are suppressed for too long, data loss may occur, especially with devices that rely on regular interrupts such as network cards or hard drives."
       ],
-      correct: [2, 4]
+      correct: [1, 3]
     }
   },
   {
@@ -498,7 +498,7 @@ const quizzes = [
       "Gestoppt (Stopped)",
       "Zombie (Defunct)"
     ],
-    "correct": [1]
+    "correct": [0]
   },
   "en": {
     "question": "Which one is not a valid UNIX process state?",
@@ -508,7 +508,7 @@ const quizzes = [
       "Stopped",
       "Zombie"
     ],
-    "correct": [1]
+    "correct": [0]
   }
 },
 
@@ -521,7 +521,7 @@ const quizzes = [
       "Sein Elternprozess muss auf ihn warten.",
       "Er wird beim nächsten Aufruf von fork() wiederverwendet."
     ],
-    "correct": [2]
+    "correct": [1]
   },
   "en": {
     "question": "What happens to an orphaned process in a UNIX-based operating system?",
@@ -531,7 +531,7 @@ const quizzes = [
       "Its parent process must wait for it.",
       "It is reused on the next call to fork()."
     ],
-    "correct": [2]
+    "correct": [1]
   }
 },
 {
@@ -543,7 +543,7 @@ const quizzes = [
       "Der Wechsel zwischen verschiedenen Prozessen, um die Systemleistung zu verbessern.",
       "Die Möglichkeit externe Hardwaregeräte (z.B. Maus) im Betrieb an- oder abzustecken."
     ],
-    "correct": [1]
+    "correct": [0]
   },
   "en": {
     "question": "What does the term swapping describe?",
@@ -553,7 +553,7 @@ const quizzes = [
       "Switching between different processes to improve system performance.",
       "The ability to plug in or remove external hardware (e.g., a mouse) during operation."
     ],
-    "correct": [1]
+    "correct": [0]
   }
 },
 
@@ -566,7 +566,7 @@ const quizzes = [
       "Der Index verwendet eine hashbasierte Struktur, um den direkten Zugriff auf die Daten zu ermöglichen.",
       "Der Index verwaltet lediglich die Metainformationen (z.B. Dateinamen, Größe, Änderungsdatum)."
     ],
-    "correct": [1]
+    "correct": [0]
   },
   "en": {
     "question": "What is the purpose of the index in an indexed file system?",
@@ -576,7 +576,7 @@ const quizzes = [
       "The index uses a hash-based structure to allow direct access to the data.",
       "The index only manages metadata (e.g., filenames, size, modification date)."
     ],
-    "correct": [1]
+    "correct": [0]
   }
 },
   
