@@ -69,6 +69,37 @@ const flashcards = [
       answer: "• When no free buffer is available\n• When the system call sync() is invoked\n• Periodically by the system\n• After every write call in O_SYNC mode"
     }
   },
+  {
+  de: {
+    question: 'Mit Hilfe welcher Datenstruktur findet man in einem UNIX-Dateisystem die zu einer Datei gehörenden Datenblöcke?',
+    answer: 'Die Datenblöcke einer Datei werden im UNIX-Dateisystem mithilfe der Datenstruktur „Inode“ gefunden.'
+  },
+  en: {
+    question: 'With the help of which data structure are the data blocks belonging to a file found in a UNIX file system?',
+    answer: 'In a UNIX file system, the data blocks of a file are located using a data structure called an "inode".'
+  }
+},
+  {
+  de: {
+    question: 'Nennen Sie zwei Möglichkeiten, durch die das Schreiben von Inhalten des UNIX Block-BufferCaches auf die Festplatte ausgelöst wird?',
+    answer: '1. Durch den Befehl „sync“, der alle gepufferten Daten auf die Festplatte schreibt.\n2. Automatisch durch das Betriebssystem in regelmäßigen Abständen (z. B. durch einen Hintergrundprozess wie „bdflush“ oder „flush“).'
+  },
+  en: {
+    question: 'Name two ways in which writing the contents of the UNIX block buffer cache to the disk can be triggered.',
+    answer: '1. By using the "sync" command, which forces all buffered data to be written to disk.\n2. Automatically by the operating system at regular intervals (e.g., through a background process like "bdflush" or "flush").'
+  }
+},
+  {
+  de: {
+    question: 'Wie kann der Block-Buffer-Cache sequentielle Lesezugriffe auf Dateien beschleunigen (nennen Sie den Mechanismus/die Funktion)?',
+    answer: 'Durch „Read-Ahead“ (vorausladendes Lesen), wobei der Cache beim Erkennen eines sequentiellen Zugriffs zusätzliche Blöcke im Voraus lädt.'
+  },
+  en: {
+    question: 'How can the block buffer cache speed up sequential reads of files (name the mechanism/function)?',
+    answer: 'Through "read-ahead", where the cache preloads additional blocks in advance when it detects sequential access.'
+  }
+},
+  
 
 
 
