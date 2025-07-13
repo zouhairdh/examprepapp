@@ -621,6 +621,95 @@ const quizzes = [
     "correct": [0]
   }
 },
+  {
+  "de": {
+    "question": "Welche der folgenden Aussagen beschreibt den Unterschied zwischen Seitenadressierung (Paging) und Segmentierung korrekt?",
+    "options": [
+      "Segmentierung unterteilt den Speicher entsprechend der logischen Bereiche eines Programms in Blöcke unterschiedlicher Größe, während Paging Blöcke fester Größe nutzt.",
+      "Paging unterteilt den Speicher entsprechend den logischen Bereichen des Programms in Blöcke unterschiedlicher Größe, während Segmentierung Blöcke fester Größe nutzt.",
+      "Beide, Paging und Segmentierung, unterteilen den Speicher entsprechend den logischen Bereichen des Programms in Blöcke unterschiedlicher Größe.",
+      "Beim Paging ist oftmals eine Umlagerung der Speicherblöcke erforderlich, bei der Segmentierung ist dies nicht nötig."
+    ],
+    "correct": [0]
+  },
+  "en": {
+    "question": "Which of the following statements correctly describes the difference between paging and segmentation?",
+    "options": [
+      "Segmentation divides memory according to the logical sections of a program into blocks of different sizes, while paging uses blocks of fixed size.",
+      "Paging divides memory according to the logical sections of a program into blocks of different sizes, while segmentation uses blocks of fixed size.",
+      "Both paging and segmentation divide memory according to the logical sections of a program into blocks of different sizes.",
+      "Paging often requires relocation of memory blocks, whereas with segmentation this is not necessary."
+    ],
+    "correct": [0]
+  }
+},
+  {
+  "de": {
+    "question": "Virtueller Speicher: Seitenflattern (Thrashing) tritt auf, wenn ...",
+    "options": [
+      "... in einer Schleife wiederkehrend die gleichen Daten gespeichert und gelöscht werden, ohne dadurch nützliche Arbeit zu leisten.",
+      "... das Betriebssystem eine hohe Anzahl von Speicheranforderungen erzeugt.",
+      "... zu viele Programme gleichzeitig im System laufen.",
+      "... das System überwiegend damit beschäftigt ist, Seiten zwischen dem Haupt- und dem Hintergrundspeicher auszutauschen."
+    ],
+    "correct": [3]
+  },
+  "en": {
+    "question": "Virtual Memory: Thrashing occurs when ...",
+    "options": [
+      "... the same data is repeatedly stored and deleted in a loop without doing useful work.",
+      "... the operating system generates a high number of memory access requests.",
+      "... too many programs are running simultaneously in the system.",
+      "... the system is primarily busy swapping pages between main memory and secondary storage."
+    ],
+    "correct": [3]
+  }
+},
+  {
+  "de": {
+    "question": "Systemaufrufe: Was ist der Zweck des Systemaufrufs exec()?",
+    "options": [
+      "Er beendet einen Prozess.",
+      "Er startet ein Programm in einem neuen Prozess.",
+      "Er ersetzt den aktuellen Prozess durch ein neues Programm.",
+      "Er synchronisiert Prozesse."
+    ],
+    "correct": [2]
+  },
+  "en": {
+    "question": "System Calls: What is the purpose of the exec() system call?",
+    "options": [
+      "It terminates a process.",
+      "It starts a program in a new process.",
+      "It replaces the current process with a new program.",
+      "It synchronizes processes."
+    ],
+    "correct": [2]
+  }
+},
+  {
+  "de": {
+    "question": "Prozesse und Fäden: Was ist der Unterschied zwischen einem Prozess und einem Faden (Thread)?",
+    "options": [
+      "Jeder Prozess besitzt seinen eigenen Stack (Stapelspeicher), während sich Fäden einen gemeinsamen Stack teilen.",
+      "Ein Prozess hat einen eigenen Adressraum, während sich die Fäden eines Prozesses diesen teilen.",
+      "Prozesse haben stets Zugriff auf den gesamten Arbeitsspeicher des Systems, Fäden hingegen nur auf einen Teil.",
+      "Prozesse werden vom Betriebssystem verwaltet, Fäden hingegen von Benutzern."
+    ],
+    "correct": [1]
+  },
+  "en": {
+    "question": "Processes and Threads: What is the difference between a process and a thread?",
+    "options": [
+      "Every process has its own stack, while threads share a common stack.",
+      "A process has its own address space, while the threads of a process share this address space.",
+      "Processes always have access to the entire system memory, while threads only have access to part of it.",
+      "Processes are managed by the operating system, while threads are managed by users."
+    ],
+    "correct": [1]
+  }
+}
+
   
 
 
