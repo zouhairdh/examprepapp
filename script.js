@@ -99,6 +99,17 @@ const flashcards = [
     answer: 'Through "read-ahead", where the cache preloads additional blocks in advance when it detects sequential access.'
   }
 },
+  {
+  de: {
+    question: 'Beschreiben Sie knapp die Funktionsweise der programmierten E/A (Polling) und unterbrechungsgetriebenen E/A. Nennen Sie einen Vorteil unterbrechungsgetriebener E/A.',
+    answer: 'Polling / Programmierte E/A: Die CPU fragt ständig den Gerätestatus ab, bis das Gerät bereit ist. Dabei wird viel CPU-Zeit verschwendet.\n\nUnterbrechungsgetriebene E/A: Das Gerät sendet ein Signal (Interrupt), wenn es bereit ist, sodass die CPU erst dann reagiert. Die CPU kann in der Zwischenzeit andere Aufgaben ausführen.\n\nEin Vorteil unterbrechungsgetriebener E/A: Effizientere Nutzung der CPU-Zeit, da sie nicht auf das Gerät warten muss.'
+  },
+  en: {
+    question: 'Briefly describe how programmed I/O (polling) and interrupt-driven I/O work. Name one advantage of interrupt-driven I/O.',
+    answer: 'Polling / Programmed I/O: The CPU continuously checks the device status in a loop until it is ready, wasting CPU time.\n\nInterrupt-driven I/O: The device sends an interrupt signal when it is ready, allowing the CPU to perform other tasks in the meantime.\n\nOne advantage of interrupt-driven I/O: More efficient CPU usage because it does not waste time waiting for the device.'
+  }
+}
+
   
 
 
