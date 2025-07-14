@@ -108,7 +108,28 @@ const flashcards = [
     question: 'Briefly describe how programmed I/O (polling) and interrupt-driven I/O work. Name one advantage of interrupt-driven I/O.',
     answer: 'Polling / Programmed I/O: The CPU continuously checks the device status in a loop until it is ready, wasting CPU time.\n\nInterrupt-driven I/O: The device sends an interrupt signal when it is ready, allowing the CPU to perform other tasks in the meantime.\n\nOne advantage of interrupt-driven I/O: More efficient CPU usage because it does not waste time waiting for the device.'
   }
-}
+},
+  {
+  de: {
+    question: 'Was ist eine Race Condition (Wettlaufsituation) und wie kann sie vermieden werden?',
+    answer: 'Eine Race Condition tritt auf, wenn mehrere Prozesse oder Threads gleichzeitig auf gemeinsame Ressourcen zugreifen und mindestens einer davon die Ressource verändert. Das Verhalten des Programms wird dadurch unvorhersehbar. Verhindert werden kann sie durch Synchronisation, z. B. mit Mutexen, Semaphoren oder atomaren Operationen.'
+  },
+  en: {
+    question: 'What is a Race Condition and how can it be prevented?',
+    answer: 'A Race Condition occurs when multiple threads or processes access shared data at the same time and at least one modifies it. This leads to unpredictable program behavior. Race Conditions can be prevented using synchronization techniques such as mutexes, semaphores, or atomic operations.'
+  }
+},
+  {
+  de: {
+    question: 'Welche drei notwendigen und eine hinreichende Bedingungen müssen erfüllt sein, damit es zu einer Verklemmung kommt?',
+    answer: 'Für eine Verklemmung (Deadlock) müssen vier Bedingungen gleichzeitig erfüllt sein: 1) Gegenseitiger Ausschluss (Mutual Exclusion), 2) Belegung und Wartebedingung (Hold and Wait), 3) Keine Unterbrechung (No Preemption), 4) Zirkuläres Warten (Circular Wait). Die ersten drei sind notwendige, die vierte ist die hinreichende Bedingung.'
+  },
+  en: {
+    question: 'What are the three necessary and one sufficient conditions for a deadlock to occur?',
+    answer: 'A deadlock occurs when four conditions are met at the same time: 1) Mutual Exclusion, 2) Hold and Wait, 3) No Preemption, and 4) Circular Wait. The first three are necessary conditions, and the fourth is the sufficient condition.'
+  }
+},
+  
 
   
 
