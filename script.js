@@ -129,6 +129,26 @@ const flashcards = [
     answer: 'A deadlock occurs when four conditions are met at the same time: 1) Mutual Exclusion, 2) Hold and Wait, 3) No Preemption, and 4) Circular Wait. The first three are necessary conditions, and the fourth is the sufficient condition.'
   }
 },
+  {
+  "de": {
+    "question": "Erklären sie was kontinuierliche Speicherung und verkettete Speicherung im Bezug auf Dateien auf einer Festplatte bedeuten. Nennen sie für beide Verfahren je einen Vorteil gegenüber dem jeweils anderen Verfahren.",
+    "answer": "Kontinuierliche Speicherung: Die Datei wird in aufeinanderfolgenden Speicherblöcken abgelegt. Alle Teile der Datei liegen nebeneinander auf der Festplatte.\n\nVerkettete Speicherung: Die Datei wird in einzelnen Blöcken gespeichert, die nicht nebeneinander liegen müssen. Jeder Block enthält einen Zeiger auf den nächsten.\n\nVorteil der kontinuierlichen Speicherung: Schnellerer Zugriff, da die Festplatte die Daten ohne viele Positionswechsel lesen kann.\n\nVorteil der verketteten Speicherung: Flexible Nutzung des Speicherplatzes, da keine zusammenhängenden freien Speicherblöcke nötig sind."
+  },
+  "en": {
+    "question": "Explain what contiguous storage and linked storage mean with respect to files on a hard disk. Name one advantage of each method compared to the other.",
+    "answer": "Contiguous storage: The file is stored in sequential memory blocks. All parts of the file are located next to each other on the disk.\n\nLinked storage: The file is stored in separate blocks that do not need to be next to each other. Each block contains a pointer to the next one.\n\nAdvantage of contiguous storage: Faster access, since the disk can read the file without frequent position changes.\n\nAdvantage of linked storage: More flexible use of disk space, since large continuous free areas are not required."
+  }
+},
+  {
+  "de": {
+    "question": "Nennen Sie einen Vor- und einen Nachteil von Journaled File Systems.",
+    "answer": "Vorteil: Höhere Zuverlässigkeit bei Systemabstürzen, da Änderungen zuerst protokolliert werden und so eine schnellere Wiederherstellung möglich ist.\n\nNachteil: Geringere Schreibgeschwindigkeit durch zusätzlichen Aufwand beim Protokollieren der Änderungen."
+  },
+  "en": {
+    "question": "Name one advantage and one disadvantage of journaled file systems.",
+    "answer": "Advantage: Higher reliability during system crashes, since changes are first logged and can be recovered quickly.\n\nDisadvantage: Slightly slower write performance due to the overhead of maintaining the journal."
+  }
+},
   
 
   
