@@ -749,6 +749,94 @@ const quizzes = [
     ],
     "correct": [1]
   }
+},
+  {
+  "de": {
+    "question": "Welche Aussage zur Seitenumlagerung (demand paging) in virtuellen Adressräumen ist richtig?",
+    "options": [
+      "Unter Seitenflattern (thrashing) versteht man das wiederholte Ein- und Auslagern von Speicherseiten, wenn der physische Hauptspeicher nicht ausreicht.",
+      "Bei der Least-Recently-Used-Strategie (LRU) wird die Seite ausgelagert, auf die in der Vergangenheit am seltensten zugegriffen wurde.",
+      "Für einen schnelleren Zugriff können Speicherseiten im Seitendeskriptor mit einem Bezeichner versehen werden.",
+      "Die Seitenersetzungsstrategie Second Chance (clock) ist nur in der Theorie interessant, weil ihre Implementierung in der Praxis viel zu aufwendig ist."
+    ],
+    "correct": [1]
+  },
+  "en": {
+    "question": "Which statement about paging in virtual address spaces is correct?",
+    "options": [
+      "Thrashing refers to the repeated swapping in and out of memory pages when physical memory is insufficient.",
+      "In the Least Recently Used (LRU) strategy, the page that was accessed least recently is swapped out.",
+      "For faster access, memory pages can be labeled with an identifier in the page descriptor.",
+      "The Second Chance (clock) replacement strategy is only interesting in theory, because its implementation is too complex in practice."
+    ],
+    "correct": [1]
+  }
+},
+  {
+  "de": {
+    "question": "Welche Aussage zu Prozesszuständen ist auf einem Monoprozessorsystem richtig?",
+    "options": [
+      "Bei Eintreffen eines Interrupts wird der aktuell laufende Prozess für die Dauer der Interrupt-Abarbeitung in den Zustand blockiert (blocked) überführt.",
+      "Im Rahmen der mittelfristigen Einplanung kann ein Prozess von Zustand laufend (running) in den Zustand schwebend laufend (suspended running) wechseln.",
+      "Ein Seitenfehler (page fault) kann dazu führen, dass der aktuell laufende Prozess in den Zustand beendet (exit) überführt wird.",
+      "Bei kooperativem Scheduling ist ein direkter Übergang vom Zustand laufend (running) in den Zustand bereit (ready) unmöglich."
+    ],
+    "correct": [1]
+  },
+  "en": {
+    "question": "Which statement about process states in a single-processor system is correct?",
+    "options": [
+      "When an interrupt occurs, the currently running process is moved to the blocked state for the duration of interrupt handling.",
+      "As part of medium-term scheduling, a process can change from the running state to the suspended running state.",
+      "A page fault may cause the currently running process to transition to the exit state.",
+      "With cooperative scheduling, a direct transition from running to ready is impossible."
+    ],
+    "correct": [1]
+  }
+},
+  {
+  "de": {
+    "question": "Was ist ein Stack-Frame?",
+    "options": [
+      "Der Speicherbereich, in dem der Programmcode einer Funktion abgelegt ist.",
+      "Ein Bereich des Speichers, in dem u. a. lokale (automatic) Variablen einer Funktion abgelegt sind.",
+      "Der Seitenrahmen (page frame) im Hauptspeicher der den Stack-Speicher enthält.",
+      "Ein spezieller Registersatz des Prozessors zur Bearbeitung von Funktionen."
+    ],
+    "correct": [1]
+  },
+  "en": {
+    "question": "What is a stack frame?",
+    "options": [
+      "The memory area where a function's program code is stored.",
+      "A memory area where, among other things, local (automatic) variables of a function are stored.",
+      "The page frame in main memory that holds the stack memory.",
+      "A special set of processor registers used to handle functions."
+    ],
+    "correct": [1]
+  }
+},
+  {
+  "de": {
+    "question": "Welche Aussage zum Thema Synchronisation ist richtig?",
+    "options": [
+      "Die V-Operation (signal) kann auf einem Semaphor nur von dem Prozess aufgerufen werden, der zuvor auch die P-Operation (wait) aufgerufen hat.",
+      "Durch den Einsatz von Semaphoren kann ein gegenseitiger Ausschluss (mutual exclusion) erzielt werden.",
+      "Ein Semaphor kann ausschließlich für mehrseitige Synchronisation (z. B. Leser/Schreiber-Problem) verwendet werden.",
+      "Einseitige Synchronisation (z. B. Produzent/Konsument) erfordert immer Betriebssystem-Unterstützung."
+    ],
+    "correct": [1]
+  },
+  "en": {
+    "question": "Which statement about synchronization is correct?",
+    "options": [
+      "The V operation (signal) on a semaphore can only be called by the process that previously called the P operation (wait).",
+      "Semaphores can be used to achieve mutual exclusion.",
+      "A semaphore can only be used for multi-party synchronization (e.g., reader/writer problem).",
+      "One-sided synchronization (e.g., producer/consumer) always requires OS support."
+    ],
+    "correct": [1]
+  }
 }
 
   
