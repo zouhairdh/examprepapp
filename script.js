@@ -148,7 +148,17 @@ const flashcards = [
     "question": "Name one advantage and one disadvantage of journaled file systems.",
     "answer": "Advantage: Higher reliability during system crashes, since changes are first logged and can be recovered quickly.\n\nDisadvantage: Slightly slower write performance due to the overhead of maintaining the journal."
   }
-},
+},{
+  "de": {
+    "question": "Wie wird eine Sprachunterstützung zum gegenseitigen Ausschluss genannt? Diese wird beispielsweise in der Programmiersprache Java eingesetzt, um gegenseitigen Ausschluss beim Zugriff auf Klassen sicherzustellen.",
+    "answer": "Diese Sprachunterstützung wird als „Monitor“ bezeichnet."
+  },
+  "en": {
+    "question": "What is the name of the language-level support for mutual exclusion that is used, for example, in the Java programming language to ensure mutual exclusion when accessing classes?",
+    "answer": "This language-level support is called a \"monitor.\""
+  }
+}
+
   
 
   
