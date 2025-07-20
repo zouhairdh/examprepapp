@@ -847,7 +847,76 @@ const quizzes = [
     ],
     "correct": [1]
   }
+},
+  {
+  "a": {
+    "de": {
+      "question": "Was passiert auf einem x86-Linux-System, wenn ein C-Programm über einen ungültigen Zeiger versucht auf Speicher zuzugreifen?",
+      "options": [
+        "Beim Laden des Programms wird die ungültige Adresse erkannt und der Speicherzugriff durch einen Sprung auf eine Abbruchfunktion ersetzt. Diese Funktion beendet das Programm mit der Meldung „Segmentation fault“.",
+        "Das Betriebssystem erkennt die ungültige Adresse und leitet eine Ausnahmebehandlung ein.",
+        "Der Übersetzer erkennt die problematische Code-Stelle und generiert Code, der zur Laufzeit bei dem Zugriff einen entsprechenden Fehler auslöst.",
+        "Die MMU erkennt die ungültige Adresse bei der Adressumsetzung und löst einen Trap aus."
+      ],
+      "correct": [1]
+    },
+    "en": {
+      "question": "What happens on an x86 Linux system when a C program tries to access memory via an invalid pointer?",
+      "options": [
+        "The invalid address is detected during program loading and the memory access is replaced by a jump to an abort function, which terminates the program with a 'Segmentation fault' message.",
+        "The operating system detects the invalid address and initiates exception handling.",
+        "The compiler detects the problematic code and generates code that triggers an appropriate error at runtime.",
+        "The MMU detects the invalid address during address translation and triggers a trap."
+      ],
+      "correct": [1]
+    }
+  },
+  "b": {
+    "de": {
+      "question": "Welche Aussage zu Prozesszuständen ist auf einem Monoprozessorsystem richtig?",
+      "options": [
+        "Ist zu einem Zeitpunkt kein Prozess im Zustand bereit, so ist auch kein Prozess im Zustand laufend.",
+        "Ein Prozess im Zustand blockiert muss warten, bis der laufende Prozess den Prozessor abgibt und kann dann in den Zustand laufend überführt werden.",
+        "Es befindet sich zu jedem Zeitpunkt maximal ein Prozess im Zustand laufend.",
+        "In den Zustand blockiert gelangen Prozesse nur aus dem Zustand bereit."
+      ],
+      "correct": [2]
+    },
+    "en": {
+      "question": "Which statement about process states is correct on a uniprocessor system?",
+      "options": [
+        "If no process is in the ready state at a certain time, then no process is in the running state either.",
+        "A process in the blocked state must wait until the running process releases the CPU and can then be moved to the running state.",
+        "At any given time, at most one process is in the running state.",
+        "Processes enter the blocked state only from the ready state."
+      ],
+      "correct": [2]
+    }
+  },
+  "c": {
+    "de": {
+      "question": "Welche Aussage zum Thema Systemaufrufe ist richtig?",
+      "options": [
+        "Durch die Bereitstellung von Systemaufrufen, kann ein Benutzerprogramm das Betriebssystem um eigene Funktionen erweitern.",
+        "Mit Hilfe von Systemaufrufen kann ein Benutzerprogramm privilegierte Operationen durch das Betriebssystem ausführen lassen, die es im normalen Ablauf nicht selbst ausführen dürfte.",
+        "Die Bearbeitung eines Systemaufrufs findet immer in dem Adressraum des aufrufenden Prozesses statt.",
+        "Benutzerprogramme dürfen keine Systemaufrufe absetzen, diese sind dem Betriebssystem vorbehalten."
+      ],
+      "correct": [1]
+    },
+    "en": {
+      "question": "Which statement about system calls is correct?",
+      "options": [
+        "By providing system calls, a user program can extend the operating system with its own functions.",
+        "With the help of system calls, a user program can have the operating system perform privileged operations that it is not allowed to do by itself.",
+        "System call processing always takes place in the address space of the calling process.",
+        "User programs are not allowed to make system calls; these are reserved for the operating system."
+      ],
+      "correct": [1]
+    }
+  }
 }
+
 
   
 
