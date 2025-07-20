@@ -933,6 +933,95 @@ const quizzes = [
       "correct": [0]
     }
   },
+  {
+  "de": {
+    "question": "Welche Aussage ist über die Funktionsweise der exec( )-Familie richtig?",
+    "options": [
+      "Dem Eltern-Prozess wird die Prozess-ID des Kind-Prozesses zurückgeliefert.",
+      "Der an exec( ) übergebene Funktionszeiger wird durch einen neuen Thread im aktuellen Prozess ausgeführt.",
+      "exec( ) erzeugt einen neuen Kind-Prozess und startet darin das angegebene Programm.",
+      "Falls kein Fehler auftritt, kehrt der Aufruf von exec( ) nicht zurück."
+    ],
+    "correct": [3]
+  },
+  "en": {
+    "question": "Which statement about the functionality of the exec( ) family is correct?",
+    "options": [
+      "The parent process receives the process ID of the child process.",
+      "The function pointer passed to exec( ) is executed by a new thread in the current process.",
+      "exec( ) creates a new child process and starts the specified program in it.",
+      "If no error occurs, the call to exec( ) does not return."
+    ],
+    "correct": [3]
+  }
+},
+{
+  "de": {
+    "question": "Welche Aussage trifft auf das Demand-Paging zu?",
+    "options": [
+      "Demand-Paging setzt eine segmentierte Speicherverwaltung voraus.",
+      "Demand-Paging erlaubt es, größere logische Adressräume anzulegen, als Hauptspeicher vorhanden ist. Allerdings muss vorausgesetzt werden, dass ein Prozess nicht alle Seiten des logischen Adressraums tatsächlich anspricht.",
+      "Demand-Paging benötigt keinerlei Hardware-Unterstützung, da sich alle benötigten Mechanismen auch ohne MMU realisieren lassen.",
+      "Demand-Paging lädt eine Seite erst dann in den Hauptspeicher, wenn sie tatsächlich angesprochen wird. Nicht benutzte Seiten werden unter Umständen aus dem Hauptspeicher ausgelagert."
+    ],
+    "correct": [3]
+  },
+  "en": {
+    "question": "Which statement about demand paging is correct?",
+    "options": [
+      "Demand paging requires a segmented memory management system.",
+      "Demand paging allows creating larger logical address spaces than the main memory can hold, assuming that not all pages are accessed.",
+      "Demand paging requires no hardware support, as all mechanisms can be implemented without an MMU.",
+      "Demand paging loads a page into main memory only when it is actually accessed. Unused pages may be swapped out."
+    ],
+    "correct": [3]
+  }
+},
+{
+  "de": {
+    "question": "Welche der folgenden Aussagen zum Thema Synchronisation ist richtig?",
+    "options": [
+      "Bei einem Zyklus im Betriebsmittelbelegungsgraph liegt ein unsicherer Zustand vor.",
+      "Ein Anwendungsprozess muss bei der Verwendung von Semaphoren Interrupts sperren, um Probleme durch Nebenläufigkeit zu verhindern.",
+      "Ein Mutex kann ausschließlich für einseitige Synchronisation verwendet werden.",
+      "Gibt ein Prozess einen Mutex frei, den er selbst zuvor nicht angefordert hatte, stellt dies einen Programmierfehler dar; der fehlerhafte Prozess sollte dann abgebrochen werden."
+    ],
+    "correct": [3]
+  },
+  "en": {
+    "question": "Which of the following statements about synchronization is correct?",
+    "options": [
+      "A cycle in the resource allocation graph indicates an unsafe state.",
+      "An application process must disable interrupts when using semaphores to avoid concurrency problems.",
+      "A mutex can only be used for one-way synchronization.",
+      "If a process releases a mutex it did not previously acquire, this is a programming error; the faulty process should be terminated."
+    ],
+    "correct": [3]
+  }
+},
+  {
+  "de": {
+    "question": "Welche Aussage über Systemsicherheit ist korrekt?",
+    "options": [
+      "Die Isolation des Adressraums eines Prozesses ist ohne eine MMU nicht möglich.",
+      "Der Einsatz von Systemaufrufen (system calls) im Anwendungsprogramm stellt eine Verletzung der Privilegseparation dar.",
+      "Das Betriebssystem überprüft alle Speicherzugriffe und verhindert Pufferüberläufe.",
+      "Die Privilegseparation auf Hardwareebene (z.B. Schutzringe) gibt dem Betriebssystem die Kontrolle über die laufenden Prozesse des Systems."
+    ],
+    "correct": [3]
+  },
+  "en": {
+    "question": "Which statement about system security is correct?",
+    "options": [
+      "The isolation of a process's address space is not possible without an MMU.",
+      "The use of system calls in application programs constitutes a violation of privilege separation.",
+      "The operating system checks all memory accesses and prevents buffer overflows.",
+      "Privilege separation at the hardware level (e.g., protection rings) gives the operating system control over the running processes of the system."
+    ],
+    "correct": [3]
+  }
+}
+
 
 
 
