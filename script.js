@@ -849,7 +849,6 @@ const quizzes = [
   }
 },
   {
-  "a": {
     "de": {
       "question": "Was passiert auf einem x86-Linux-System, wenn ein C-Programm über einen ungültigen Zeiger versucht auf Speicher zuzugreifen?",
       "options": [
@@ -870,8 +869,7 @@ const quizzes = [
       ],
       "correct": [1]
     }
-  },
-  "b": {
+  },{
     "de": {
       "question": "Welche Aussage zu Prozesszuständen ist auf einem Monoprozessorsystem richtig?",
       "options": [
@@ -892,8 +890,7 @@ const quizzes = [
       ],
       "correct": [2]
     }
-  },
-  "c": {
+  },{
     "de": {
       "question": "Welche Aussage zum Thema Systemaufrufe ist richtig?",
       "options": [
@@ -914,8 +911,30 @@ const quizzes = [
       ],
       "correct": [1]
     }
-  }
-}
+  },{
+    "de": {
+      "question": "Welche Aussage zu Prozessen und Fäden (Threads) ist richtig?",
+      "options": [
+        "Der Aufruf von fork(2) gibt im Elternprozess die Prozess-ID des Kindprozesses zurück, im Kindprozess hingegen den Wert 0.",
+        "Die Veränderung von Variablen und Datenstrukturen in einem mittels fork(2) erzeugten Kindprozess beeinflusst auch die Datenstrukturen im Elternprozess.",
+        "Mittels fork(2) erzeugte Kindprozesse müssen stets vor dem Elternprozess beendet werden.",
+        "Fäden, die mittels pthread_create(3) erzeugt wurden, besitzen jeweils einen eigenen Adressraum."
+      ],
+      "correct": [0]
+    },
+    "en": {
+      "question": "Which statement about processes and threads is correct?",
+      "options": [
+        "The call to fork(2) returns the child process's PID in the parent process, and the value 0 in the child process.",
+        "Changing variables and data structures in a child process created with fork(2) also affects the data in the parent process.",
+        "Child processes created using fork(2) must always terminate before the parent process.",
+        "Threads created with pthread_create(3) each have their own address space."
+      ],
+      "correct": [0]
+    }
+  },
+
+
 
 
   
