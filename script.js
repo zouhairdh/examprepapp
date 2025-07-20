@@ -1020,7 +1020,97 @@ const quizzes = [
     ],
     "correct": [3]
   }
+},
+  {
+  "de": {
+    "question": "Welche Aussage über Ablaufplanung (CPU scheduling) ist richtig?",
+    "options": [
+      "Präemptive Ablaufplanung drängt einen Prozess möglicherweise dazu die CPU abzugeben.",
+      "Der Konvoiefekt kann bei kooperativen Planungsverfahren wie First-Come-First-Served nicht auftreten.",
+      "Virtual-Round-Robin ist für den interaktiven Betrieb ungeeignet.",
+      "Round-Robin bevorzugt E/A-intensive Prozesse zu Gunsten von rechenintensiven Prozessen."
+    ],
+    "correct": [0]
+  },
+  "en": {
+    "question": "Which statement about CPU scheduling is correct?",
+    "options": [
+      "Preemptive scheduling may cause a process to give up the CPU.",
+      "The convoy effect cannot occur with cooperative scheduling like First-Come-First-Served.",
+      "Virtual Round-Robin is unsuitable for interactive use.",
+      "Round-Robin favors I/O-intensive processes over CPU-intensive processes."
+    ],
+    "correct": [0]
+  }
+},
+  {
+  "de": {
+    "question": "Bei Demand-Paging kann Seitenflattern (Thrashing) auftreten. Welche Aussage ist richtig?",
+    "options": [
+      "Seitenflattern tritt auf, wenn ein Prozess zum Weiterarbeiten häufig gerade die Seiten benötigt, die durch das Betriebssystem im Rahmen einer globalen Ersetzungsstrategie gerade erst ausgelagert wurden.",
+      "Seitenflattern tritt auf, wenn Seiten zur Defragmentierung im Speicher verschoben werden.",
+      "Bei der Ersetzungsstrategie Second Chance (SC) wird bei einem Zugriff auf eine Seite ein Referenzbit gesetzt. Wird die Seite längere Zeit nicht angesprochen, so wird dieses Bit gelöscht. Da dieses Bit ständig den Wert ändert, spricht man von Seitenflattern.",
+      "Seitenflattern kann nur auftreten, wenn der dynamisch genutzte Speicher eines Prozesses größer ist, als der physikalisch vorhandene Speicher des Systems."
+    ],
+    "correct": [0]
+  },
+  "en": {
+    "question": "With demand paging, when can thrashing occur?",
+    "options": [
+      "Thrashing occurs when a process frequently needs pages that have just been swapped out by a global replacement strategy.",
+      "Thrashing happens when pages are moved in memory for defragmentation.",
+      "In the Second Chance replacement strategy, a reference bit is set on page access. If the page isn't accessed for a long time, the bit is cleared. Because the bit changes often, it's called thrashing.",
+      "Thrashing can only occur when the dynamically used memory of a process exceeds the physically available memory of the system."
+    ],
+    "correct": [0]
+  }
+},
+  {
+  "de": {
+    "question": "Welche der folgenden Aussagen zu aktivem Warten ist richtig?",
+    "options": [
+      "Aktives Warten vergeudet gegenüber passivem Warten immer CPU-Zeit.",
+      "Bei verdrängenden Scheduling-Strategien verzögert aktives Warten nur den betroffenen Prozess, behindert aber nicht andere.",
+      "Aktives Warten darf bei nicht-verdrängenden Scheduling-Strategien auf einem Einkernrechensystem nicht verwendet werden.",
+      "Auf Mehrkernsystemen ist aktives Warten unproblematisch und deshalb dem passiven Warten immer vorzuziehen."
+    ],
+    "correct": [1]
+  },
+  "en": {
+    "question": "Which of the following statements about busy waiting is correct?",
+    "options": [
+      "Busy waiting always wastes CPU time compared to passive waiting.",
+      "With preemptive scheduling, busy waiting only delays the affected process, not others.",
+      "Busy waiting must not be used with non-preemptive scheduling on single-core systems.",
+      "On multicore systems, busy waiting is unproblematic and always preferable to passive waiting."
+    ],
+    "correct": [1]
+  }
+},
+  {
+  "de": {
+    "question": "Welche Aussage über Systemsicherheit ist korrekt?",
+    "options": [
+      "Die Isolation des Adressraums eines Prozesses ist ohne eine MMU nicht möglich.",
+      "Der Einsatz von Systemaufrufen (system calls) im Anwendungsprogramm stellt eine Verletzung der Privilegseparation dar.",
+      "Das Betriebssystem überprüft alle Speicherzugriffe und verhindert Pufferüberläufe.",
+      "Die Privilegseparation auf Hardwareebene (z.B. Schutzringe) gibt dem Betriebssystem die Kontrolle über die laufenden Prozesse des Systems."
+    ],
+    "correct": [3]
+  },
+  "en": {
+    "question": "Which statement about system security is correct?",
+    "options": [
+      "The isolation of a process's address space is not possible without an MMU.",
+      "The use of system calls in application programs constitutes a violation of privilege separation.",
+      "The operating system checks all memory accesses and prevents buffer overflows.",
+      "Privilege separation at the hardware level (e.g., protection rings) gives the operating system control over the running processes of the system."
+    ],
+    "correct": [3]
+  }
 }
+
+
 
 
 
